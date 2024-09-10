@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'camilo/project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '2c7b1c12f41cbf9ddf539d775d1f1acb94073537',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'camilo/project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '2c7b1c12f41cbf9ddf539d775d1f1acb94073537',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -52,6 +52,24 @@
             'reference' => 'a70f5c95fb43bc83f07c9c948baa0dc1829bf201',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'microsoft/azure-storage-blob' => array(
+            'pretty_version' => '1.5.4',
+            'version' => '1.5.4.0',
+            'reference' => '1023ce1dbf062351a32ca5ec72ad1fd4a504f1bf',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../microsoft/azure-storage-blob',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'microsoft/azure-storage-common' => array(
+            'pretty_version' => '1.5.2',
+            'version' => '1.5.2.0',
+            'reference' => '8ca7b1bf4c9ca7c663e75a02a0035b05b37196a0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../microsoft/azure-storage-common',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -226,7 +244,7 @@
         'roave/security-advisories' => array(
             'pretty_version' => 'dev-latest',
             'version' => 'dev-latest',
-            'reference' => '42615ef94f66c04cc640692f65a20d01d69556e2',
+            'reference' => '883f97eeb8484a500893e4508f60da3086c69ead',
             'type' => 'metapackage',
             'install_path' => null,
             'aliases' => array(

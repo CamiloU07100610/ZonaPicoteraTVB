@@ -6,11 +6,11 @@
   "require": {
     "php": ">=7.4",
     "monolog/monolog": "^2.0",
-    "guzzlehttp/guzzle": "^7.0"
+    "guzzlehttp/guzzle": "^7.0",
+    "microsoft/azure-storage-blob": "^1.5"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest"
-    ,
+    "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "^9.0"
   },
   "autoload": {
@@ -19,7 +19,13 @@
     }
   },
   "scripts": {
-    "test": "phpunit"
+    "test": "phpunit",
+    "post-install-cmd": [
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "php artisan optimize"
+    ]
   },
   "config": {
     "optimize-autoloader": true,
